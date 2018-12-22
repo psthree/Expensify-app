@@ -16,17 +16,17 @@ const store = configureStore();
 
 //add expense = Water bill
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 45 }));
-//add expense = gas bill
-store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
+// store.dispatch(addExpense({ description: 'Water Bill', amount: 45 }));
+// //add expense = gas bill
+// store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1000 }));
+// store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
 
 //getVisibleExpenses print list
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
+// const state = store.getState();
+// const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+// console.log(visibleExpenses);
+// console.log(store.getState());
 
-console.log(store.getState());
 const jsx = (
   <Provider store={store}>
     <AppRouter />
