@@ -11,6 +11,7 @@ const path = require('path');
 // console.log(path.join(__dirname, 'public'));
 
 module.exports = env => {
+  const idProduction = env === 'production';
   console.log('env=', env);
   return {
     entry: './src/app.js',
