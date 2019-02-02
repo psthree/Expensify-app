@@ -11,7 +11,7 @@ const path = require('path');
 // console.log(path.join(__dirname, 'public'));
 
 module.exports = env => {
-  const idProduction = env === 'production';
+  const isProduction = env === 'production';
   console.log('env=', env);
   return {
     entry: './src/app.js',
@@ -32,7 +32,7 @@ module.exports = env => {
         }
       ]
     },
-    devtool: 'cheap-module-eval-source-map',
+    devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       historyApiFallback: true //always server the index page let react router figure out what to display
