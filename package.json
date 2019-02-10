@@ -11,7 +11,7 @@
     "test": "jest --config=jest.config.json"
   },
   "dependencies": {
-    "babel-cli": "6.24.1",
+    "babel-cli": "6.26.0",
     "babel-core": "6.25",
     "babel-loader": "7.1.1",
     "babel-plugin-transform-class-properties": "6.24.1",
@@ -22,7 +22,8 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
-    "live-server": "^1.2.0",
+    "express": "^4.16.4",
+    "live-server": "^1.2.1",
     "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "normalize.css": "^8.0.0",
