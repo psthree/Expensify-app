@@ -20,5 +20,8 @@ app.listen(port, () => {
 //from server dir
 //node server.js
 
+//looks like the node version needs to be set in ENGINES package.json
+//see the node course for settings
+
 
 https://peter-react-expensify.herokuapp.com/ | https://git.heroku.com/peter-react-expensify.git
