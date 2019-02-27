@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 
 
-import Header from '../components/header';
+import Header from '../components/Header';
 import ExpenseDashboard from '../components/ExpenseDashboard';
 import AddExpense from '../components/AddExpense';
 import EditExpense from '../components/EditExpense';
