@@ -24,4 +24,4 @@ app.listen(port, () => {
 //see the node course for settings
 
 
-https://peter-react-expensify.herokuapp.com/ | https://git.heroku.com/peter-react-expensify.git
+//https://peter-react-expensify.herokuapp.com/ | https://git.heroku.com/peter-react-expensify.git
