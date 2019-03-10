@@ -10,4 +10,5 @@ test('Should render ExpenseListItem with expenses', () => {
 
 //when making changes to the file to be tested
 // press u in the console to update the snapshot
+
 //npm test -- --watch
