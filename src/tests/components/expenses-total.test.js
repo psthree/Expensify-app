@@ -18,7 +18,7 @@ test('Should correctly total a single expense', () => {
 test('Should correctly total multiple expenses', () => {
   const res = selectExpensesTotal(expenses);
   //   console.log('test', [expenses[0].amount]);
-  expect(res).toBe(24195);
+  expect(res).toBe(114195);
 });
 
 //when making changes to the file to be tested
