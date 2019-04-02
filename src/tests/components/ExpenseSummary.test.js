@@ -18,4 +18,5 @@ test('Should correctly render expensesSummary with multiple expense', () => {
 });
 
 // u updates snapshot
+// press u in the console to update the snapshot
 // npm test-- - u
