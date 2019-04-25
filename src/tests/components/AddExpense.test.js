@@ -6,12 +6,14 @@ import expenses from '../fixtures/expenses';
 // import { addExpense } from '../../actions/expenses';
 
 //instead of defining in each test define it here and use them in the tests
-let addExpense, history, wrapper;
+let startAddExpense, history, wrapper;
 
 beforeEach(() => {
-  addExpense = jest.fn();
+  startAddExpense = jest.fn();
   history = { push: jest.fn() };
-  wrapper = shallow(<AddExpense addExpense={addExpense} history={history} />);
+  wrapper = shallow(
+    <AddExpense startAddExpense={startAddExpense} history={history} />
+  );
 });
 
 test('should render AddExpense correctly', () => {
@@ -21,7 +23,7 @@ test('should render AddExpense correctly', () => {
 test('should handle onSubmit', () => {
   wrapper.find('ExpenseForm').prop('onSubmit')(expenses[1]);
   expect(history.push).toHaveBeenLastCalledWith('/');
-  expect(addExpense).toHaveBeenLastCalledWith(expenses[1]);
+  expect(startAddExpense).toHaveBeenLastCalledWith(expenses[1]);
 });
 
 //npm test -- --watch
