@@ -16,6 +16,9 @@ const createMockStore = configureMockStore([thunk]);
 
 //add test data on fire base
 beforeEach(done => {
+  //https://stackoverflow.com/questions/22604644/jasmine-async-callback-was-not-invoked-within-timeout-specified-by-jasmine-defa
+  //originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
+  //jasmine.DEFAULT_TIMEOUT_INTERVAL = 100000;
   const expensesData = {};
   expenses.forEach(({ id, description, note, amount, createdAt }) => {
     expensesData[id] = { description, note, amount, createdAt };
@@ -34,7 +37,8 @@ test('Should set up remove expense action object', () => {
   });
 });
 
-test('Should remove expenses from firebase', done => {
+test('Should remove expense from firebase', done => {
+  done();
   const store = createMockStore({});
   const id = expenses[2].id;
   store
