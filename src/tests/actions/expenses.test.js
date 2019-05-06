@@ -38,7 +38,7 @@ test('Should set up remove expense action object', () => {
 });
 
 test('Should remove expense from firebase', done => {
-  done();
+  //done();
   const store = createMockStore({});
   const id = expenses[2].id;
   store
@@ -152,8 +152,6 @@ test('Should fetch expenses from firebase', done => {
     done();
   });
 });
-
-test('Should remove expenses from firebase', done => {});
 
 //to run in watch mode
 //npm test -- --watch

@@ -86,7 +86,7 @@ export const startSetExpenses = () => {
             ...childSnapshot.val()
           });
         });
-        console.log(expenses);
+        // console.log(expenses);
 
         dispatch(setExpenses(expenses));
       })
