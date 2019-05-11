@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the login component 1`] = `
+<div>
+  <button>
+    Login
+  </button>
+</div>
+`;
+
+exports[`Should render the not found component 1`] = `
+<div>
+  <button>
+    Login
+  </button>
+</div>
+`;
