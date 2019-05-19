@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
-
+import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
+//Warning: Please use `require("history").createBrowserHistory` instead of `require("history/createBrowserHistory")`. Support for the latter will be removed in the next major release
+import createHistory from 'history/createBrowserHistory';
 import Header from '../components/Header';
 import ExpenseDashboard from '../components/ExpenseDashboard';
 import AddExpense from '../components/AddExpense';
@@ -9,8 +10,10 @@ import Help from '../components/Help';
 import NotFound from '../components/NotFound';
 import LoginPage from '../components/loginPage';
 
+export const history = createHistory();
+
 const AppRouter = () => (
-  <BrowserRouter>
+  <Router history={history}>
     <div>
       <Header />
       <Switch>
@@ -22,7 +25,7 @@ const AppRouter = () => (
         <Route component={NotFound} />
       </Switch>
     </div>
-  </BrowserRouter>
+  </Router>
 );
 
 export default AppRouter;
